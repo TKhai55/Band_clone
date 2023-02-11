@@ -1,0 +1,280 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
+*/
+/*
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, hình tròn, hình vuông, ...)
+ */
+.clear{
+    clear: both;
+}
+
+
+#wrapper{
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#nav{
+    display: inline-block;
+}
+
+#nav li{
+
+    position: relative;
+
+}
+
+#nav li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: block;
+    
+}
+#nav > li{
+    display: inline-block;  
+}
+
+
+#nav > li > a{
+    text-transform: uppercase;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav, .subnav{
+    list-style: none;
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 16px;
+}
+
+#nav >li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 16px rgba(0,0,0,0.3);
+}
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#header .search-btn{
+    float:right;
+    padding: 0 21px;
+}
+#header .search-btn:hover{
+    background-color: #f44336;
+}
+#header .search-icon{
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 46px;
+}
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider1.jpg') top center / cover no-repeat;
+}
+#slider .text-content{
+    color: #fff;
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+}
+#slider .text-header{
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 15px;
+}
+#content{
+
+}
+#content .content-section{
+    width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .content-heading{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+#content .content-sub-heading{
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 25px;
+    opacity: 0.6;
+}
+
+#content .content-about{
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+#content .member-list{
+    margin-top: 48px;
+}
+
+#content .member-item{
+    float: left;
+    width: 33.3333333%;
+    text-align: center;
+}
+
+#content .member-name{
+    font-size: 15px;
+}
+
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+.tour-section{
+    background-color: #000;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+#content .month-list{
+    background-color: #fff;
+    list-style: none;
+}
+
+.month-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.month-list .sold-out{
+    color: #fff;
+    background-color: #F44337;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.month-list .quantity{
+    margin-right: 16px;
+    float: right;
+    background-color: #000;
+    color: #fff;
+    width: 24px;
+    border-radius: 50%;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: -3px;
+}
+
+/* Tour place */
+
+.place-list{
+    margin: 32px -8px;
+}
+
+.place-item{
+    float: left;
+    width: 33.33333%;
+    padding: 0px 8px;
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-title{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-day{
+    color: #757575;
+    margin-top: 15px;
+}
+
+.place-des{
+    margin-top: 15px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.place-btn:hover{
+    color:#000;
+    background-color: #ccc;
+}
+
+.place-btn{
+   text-decoration: none;
+   background-color: #000;
+   color: #fff;
+   padding: 8px 16px;
+   display: inline-block;
+   margin-top: 15px;
+}
+
+
+#footer{
+
+}
