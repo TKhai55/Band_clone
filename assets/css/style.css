@@ -274,7 +274,77 @@ html{
    margin-top: 15px;
 }
 
+.modal_container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.modal_form{
+    width: 900px;
+    min-height: 100px;
+    display: flex;
+    
+    position: relative;
+    flex-direction: column;
+}
+header{
+    display: flex;
+
+    padding: 32px;
+    font-size: 30px;
+    background-color: #009688;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+.ti-close{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: 5px;
+    font-size: 14px;
+}
+.ti-bag{
+    padding: 0 16px;
+}
+.modal_body{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 32px 16px;
+}
+.modal-input{
+    padding: 12px 8px;
+    border-radius: 3px;
+}
+.modal_label{
+    padding: 16px 0;
+    font-size: 16px;
+}
+.modal_btn{
+    margin-top: 16px;
+    background-color: #009688;
+    border: none;
+    padding: 18px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+footer{
+    background-color: white;
+    padding: 0px 16px 12px 16px;
+    display: flex;
+    justify-content: flex-end;
+}
 #footer{
 
 }
