@@ -92,7 +92,7 @@
                             <h3 class="place-title">New York</h3>
                             <p class="place-day">Fri 27 Nov 2016</p>
                             <p class="place-des">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="place-btn">Buy Tickets</a>
+                            <button class="place-btn js-buy-ticket">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="place-item">
@@ -101,7 +101,7 @@
                             <h3 class="place-title">Paris</h3>
                             <p class="place-day">Sat 28 Nov 2016</p>
                             <p class="place-des">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="place-btn">Buy Tickets</a>
+                            <button class="place-btn js-buy-ticket">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="place-item">
@@ -110,7 +110,7 @@
                             <h3 class="place-title">San Francisco</h3>
                             <p class="place-day">Sun 29 Nov 2016</p>
                             <p class="place-des">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <a href="#" class="place-btn">Buy Tickets</a>
+                            <button class="place-btn js-buy-ticket">Buy Tickets</button>
                         </div>
                     </div>
                     <div class="clear"></div>
@@ -132,10 +132,10 @@
             
         </div>
         
-        <div class="modal_container">
+        <div class="modal_container js-modal">
             <div class="modal_form">
                 <header class="modal_header">
-                    <i class="search-icon ti-close"></i>
+                    <i class="search-icon ti-close js-modal-close"></i>
 
                     <i class="search-icon ti-bag"></i>
                     Tickets
@@ -162,5 +162,25 @@
             </div>
         </div>
     </div>
+    <script>
+        const buyBtns= document.querySelectorAll('.js-buy-ticket')
+        const modal= document.querySelector('.js-modal')
+        const modalClose= document.querySelector('.js-modal-close')
+
+        function showBuyTickets() {
+            modal.classList.add('open')
+        }
+
+        function hideBuyTickets() {
+            modal.classList.remove('open')
+        }
+
+        for(const buyBtn of buyBtns){
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+
+        modalClose.addEventListener('click', hideBuyTickets)
+
+    </script>
 </body>
 </html>

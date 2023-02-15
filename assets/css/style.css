@@ -274,6 +274,10 @@ html{
    margin-top: 15px;
 }
 
+.modal_container.open{
+    display: flex;
+   
+}
 .modal_container{
     position: fixed;
     top: 0;
@@ -281,10 +285,12 @@ html{
     right: 0;
     left: 0;
     background-color: rgba(0,0,0,0.3);
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: none;
+    animation: modalFadein ease .5s;
+
 }
 
 .modal_form{
@@ -347,4 +353,13 @@ footer{
 }
 #footer{
 
+}
+
+@keyframes modalFadein {
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+    }
 }
