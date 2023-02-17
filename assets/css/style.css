@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 html{
+    scroll-behavior: smooth;
     font-family: Helvetica, Arial, sans-serif;
 }
 /* 
@@ -130,7 +131,7 @@ html{
 }
 #content .content-section{
     width: 800px;
-    padding: 64px 16px;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -162,8 +163,6 @@ html{
 }
 
 #content .member-item{
-    float: left;
-    width: 33.3333333%;
     text-align: center;
 }
 
@@ -186,6 +185,7 @@ html{
 }
 
 #content .month-list{
+    margin-top: 32px;
     background-color: #fff;
     list-style: none;
 }
@@ -220,14 +220,9 @@ html{
 /* Tour place */
 
 .place-list{
-    margin: 32px -8px;
+    margin-top: 32px;
 }
 
-.place-item{
-    float: left;
-    width: 33.33333%;
-    padding: 0px 8px;
-}
 
 .place-img:hover{
     opacity: 0.6;
@@ -260,18 +255,23 @@ html{
     font-weight: 500;
 }
 
-.place-btn:hover{
+.btn:hover{
     color:#000;
     background-color: #ccc;
 }
 
-.place-btn{
+.pull-right{
+    float: right !important;
+}
+
+.btn{
    text-decoration: none;
    background-color: #000;
    color: #fff;
    padding: 8px 16px;
    display: inline-block;
    margin-top: 15px;
+   border: none;
 }
 
 .modal_container.open{
@@ -362,4 +362,84 @@ footer{
     to{
         transform: translateY(0);
     }
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-1{
+    width: 100%;
+}
+.col-2{
+    width: 50%;
+}
+.col-3{
+    width: 33.33333%;
+}
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+
+.map-section img{
+    width: 100%;
+}
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+.social-list{
+    font-size: 24px;
+    margin-bottom: 8px;
+
+}
+.social-list a{
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+.social-list a:hover{
+    color: rgba(0,0,0,0.4);
+    
+}
+.copy-right{
+    color: rgba(0,0,0,0.4);
+    
+}
+.copy-right a{
+    color: rgba(0,0,0,0.4);
+
+
 }
